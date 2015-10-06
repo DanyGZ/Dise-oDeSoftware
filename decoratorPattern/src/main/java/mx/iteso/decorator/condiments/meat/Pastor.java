@@ -8,6 +8,7 @@ public class Pastor extends CondimentsDecorator {
 
     public Pastor (Taco taco){
         this.taco = taco;
+        this.size = taco.size;
     }
 
     @Override

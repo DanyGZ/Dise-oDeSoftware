@@ -11,6 +11,7 @@ public class Camaron extends CondimentsDecorator {
 
     public Camaron(Taco taco){
         this.taco = taco;
+        this.size = taco.size;
     }
 
     @Override

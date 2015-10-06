@@ -11,6 +11,7 @@ public class Pescado extends CondimentsDecorator {
 
     public Pescado(Taco taco){
         this.taco = taco;
+        this.size = taco.size;
     }
 
     @Override
@@ -26,10 +27,10 @@ public class Pescado extends CondimentsDecorator {
 
         double sizePrice;
 
-        if(taco.getSize() == Taco.MEGA){
+        if(taco.getSize().equals(Taco.MEGA)){
             sizePrice = 4;
         }
-        else if(taco.getSize() == Taco.REGULAR){
+        else if(taco.getSize().equals(Taco.REGULAR)){
             sizePrice = 2;
         }else{
             throw new RuntimeException();

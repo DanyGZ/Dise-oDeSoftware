@@ -8,6 +8,7 @@ public class TortillaMaiz extends CondimentsDecorator {
 
     public TortillaMaiz (Taco taco){
         this.taco = taco;
+        this.size = taco.size;
     }
 
     @Override

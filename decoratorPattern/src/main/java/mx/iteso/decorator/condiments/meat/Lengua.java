@@ -8,6 +8,7 @@ public class Lengua  extends CondimentsDecorator {
 
     public Lengua (Taco taco){
         this.taco = taco;
+        this.size = taco.size;
     }
 
     @Override

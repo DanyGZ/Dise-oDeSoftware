@@ -8,6 +8,7 @@ public class Chorizo extends CondimentsDecorator {
 
     public Chorizo(Taco taco){
         this.taco = taco;
+        this.size = taco.size;
     }
 
     @Override
